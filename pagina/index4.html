@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="imagenes/starbucks logo.png" type="image/x-icon">
+    <!-- Incluir Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css"> 
+    <script defer src="main.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li>
+                <img src="./imagenes/starbucks-coffee-green-logo-28.png" alt="Logo" class="nav-logo" >
+           
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index2.html" class="menu-button">MENU</a></li>
+            <li><a href="index3.html">INFORMACIÓN</a></li>
+            <li><a href="index4.html">CONTACTO</a></li>
+            <li><button id="nav-logo2-button">
+                <img src="./imagenes/starbucksathomee.jpg" alt="Logo2" class="nav-logo2">
+            </button></li>
+        </ul>
+    </nav>
+    <style>
+ 
+        /* Media query para pantalla mediana */
+        @media (max-width: 768px) {
+       .nav-list {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+        }
+
+       .nav-item {
+            width: 100%; /* Ancho al 100% para ocupar todo el ancho disponible */
+            text-align: left; /* Alinea el texto a la izquierda */
+
+            .nav-logo {
+    width: 30px; /* Ancho del logotipo */
+    height: 30px; /* Alto del logotipo */
+    display: block;
+    position: absolute;
+    left: 0; /* Mueve el logotipo a la izquierda */
+  }
+
+       .nav-logo2 {
+        position: absolute;
+        align-items: center;
+        list-style: none;
+        top: 20px; /* Ajusta según sea necesario */
+        display: flex;
+        }
+    }
+        }
+
+
+    </style>
+    <div class="top-message">
+        <p>Contacto</p>
+    </div>
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .container-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin-top: 30px;
+            padding: 0;
+        }
+    
+        .card {
+            min-height: 700px;
+            margin: 0;
+            min-width: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            right: 9px;
+            border-radius: 3rem;
+        }
+    
+        .form-control {
+            border: 2px solid #022413;
+            border-radius: 0.50rem;
+            width: 100%; /* Cambiado a 100% para hacerlo responsive */
+        
+            margin-bottom: 10px; /* Ajuste de margen inferior */
+        }
+    
+        textarea {
+            resize: vertical; /* Cambiado a vertical para mejor comportamiento responsive */
+            width: 100%; /* Cambiado a 100% para hacerlo responsive */
+            padding: 10px;
+            border: 2px solid #022413;
+            border-radius: 0.50rem;
+            margin-bottom: 10px; /* Ajuste de margen inferior */
+        }
+    
+        .card-title {
+            font-family: 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+            color: green;
+        }
+    </style>
+    
+</head>
+<body>
+
+<div class="container-flex">
+    <div class="card shadow-lg p-5 bg-light">
+        <div class="card-body">
+            <h5 class="card-title">Formulario de Contacto</h5>
+            <p>Envianos un mensaje con tus dudas y nos contactaremos</p>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="correo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <a href="index.html" class="btn btn-secondary">Volver al Home</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Incluir Bootstrap JS (opcional, dependiendo de tus necesidades) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+azc=Um1KYsz5fEZKtv1/EW2FBo5zB" crossorigin="anonymous"></script>
+
+    <div class="contenedor">
+        <footer style=" background-color: #ffffff;
+        color: #000;
+        text-align: center;
+        height: 100px;
+        line-height: 100px; /* Ajuste para centrar verticalmente el texto */
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.2);
+        ">
+            <p>&copy; 2024 Magdalena / grupo sin_nombre</p>
+        </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-dVQkKNqFjJNYpACtVl+3Y6Z9v/2yIfz2cU+1Qt49gg4mx5q4m/GmR2U0Y9Jp9YcH" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+oEa4qiaWwcBjzxyma2bRPDddD2EnP/1JZj" crossorigin="anonymous"></script>
+    </body>
+    </html>

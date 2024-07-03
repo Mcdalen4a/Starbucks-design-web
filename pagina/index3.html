@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información</title>
+    <link rel="icon" href="imagenes/starbucks logo.png" type="image/x-icon">
+    <!-- Incluir Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css"> 
+    
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li>
+                <img src="./imagenes/starbucks-coffee-green-logo-28.png" alt="Logo" class="nav-logo" >
+           
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index2.html" class="menu-button">MENU</a></li>
+            <li><a href="index3.html">INFORMACIÓN</a></li>
+            <li><a href="index4.html">CONTACTO</a></li>
+            <li><button id="nav-logo2-button">
+                <img src="./imagenes/starbucksathomee.jpg" alt="Logo2" class="nav-logo2">
+            </button></li>
+        </ul>
+    </nav>
+    <style>
+ 
+        /* Media query para pantalla mediana */
+        @media (max-width: 768px) {
+       .nav-list {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+        }
+
+       .nav-item {
+            width: 100%; /* Ancho al 100% para ocupar todo el ancho disponible */
+            text-align: left; /* Alinea el texto a la izquierda */
+
+            .nav-logo {
+    width: 30px; /* Ancho del logotipo */
+    height: 30px; /* Alto del logotipo */
+    display: block;
+    position: absolute;
+    left: 0; /* Mueve el logotipo a la izquierda */
+  }
+
+       .nav-logo2 {
+        position: absolute;
+        align-items: center;
+        list-style: none;
+        top: 20px; /* Ajusta según sea necesario */
+        display: flex;
+        }
+    }
+        }
+
+
+    </style>
+    <div class="top-message">
+        <p>¡Nuestra Historia!</p>
+     
+    </div>
+
+    <div class="container">
+        <img src="./imagenes/mano.png" alt="" class="historia">
+        <style>
+        .historia{
+            width: 700px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            margin-top: -20px;
+            display: flex;
+        }
+    </style>
+    </div>
+
+    <div class="container2">
+        <p class="p">Starbucks comenzó como una pequeña cafetería en Seattle, fundada por tres amigos apasionados por el café: Jerry Baldwin, Zev Siegl y Gordon Bowker, en 1971. Su objetivo era ofrecer granos de café de alta calidad y una experiencia de café premium en un ambiente acogedor.
+
+            Con el tiempo, la cafetería se hizo popular por sus exclusivos granos de café y su enfoque en la calidad. En 1983, Howard Schultz se unió a la compañía y quedó impresionado por la cultura del café en Italia. Inspirado, convenció a los fundadores para transformar Starbucks en una experiencia de café similar a la italiana, con espacios para sentarse y disfrutar del café.
+
+            A partir de ahí, Starbucks comenzó a expandirse rápidamente, abriendo más tiendas en Estados Unidos y luego internacionalmente. Se convirtió en un símbolo global de café de alta calidad, conocido por su compromiso con los agricultores de café, sostenibilidad y la creación de una comunidad alrededor del café.
+
+            Hoy en día, Starbucks es una de las cadenas de cafeterías más reconocidas a nivel mundial, con miles de tiendas en todo el mundo y una amplia gama de productos más allá del café, como té, bebidas frías y alimentos. Su éxito ha sido impulsado por su dedicación a la calidad, la innovación en bebidas y su capacidad para crear espacios acogedores donde la gente pueda disfrutar de una buena taza de café.
+            </p>
+            <style>
+               container2 {
+        display: flex;
+        height: 70vh; /* Ajusta esta altura según lo que necesites */
+
+
+
+    }
+
+    .p {
+        color: white;
+        text-align: center;
+        
+        display: block;
+            margin: 0 auto;
+        max-width: 80%; /* Ajusta el ancho máximo del texto según lo necesites */
+        margin-top: 100px;
+       
+
+    }
+            </style>
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-8">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight: bold; font-size: 30px;">Planeta</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Medio ambiente</h6>
+                    <p class="card-text">Nos esforzamos por ser positivos con nuestros recursos, devolviendo más de lo que tomamos del planeta. Trabajamos para almacenar más carbono del que emitimos, reponer más agua dulce de la que utilizamos y eliminar los desperdicios. Sabemos que no podemos hacerlo solos; se necesita el esfuerzo conjunto de cada uno de nosotros. Juntos, podemos crear un impacto positivo duradero en nuestro entorno y asegurar un futuro sostenible para las generaciones venideras.</p>
+                    <a href="https://stories.starbucks.com/stories/planet/" class="card-link" style="font-size: 20px;">Más Información</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="./imagenes/planeta.png" alt="Imagen relacionada" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+
+
+    
+    <div class="contenedor">
+        <footer>
+            <style>
+                footer {
+                    margin-top: 200px
+                }
+            </style>
+            <p>&copy; 2024 Magdalena / grupo sin_nombre</p>
+        </footer>
+    </div>
+
+    <!-- Incluir Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-dVQkKNqFjJNYpACtVl+3Y6Z9v/2yIfz2cU+1Qt49gg4mx5q4m/GmR2U0Y9Jp9YcH" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+oEa4qiaWwcBjzxyma2bRPDddD2EnP/1JZj" crossorigin="anonymous"></script>
+</body>
+</html>

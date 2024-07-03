@@ -1,0 +1,205 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #022413;
+    box-sizing: border-box;
+    width: 100vw; /* Asegura que el cuerpo ocupe el 100% del ancho de la ventana */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Asegura que el navbar ocupe el 100% del ancho */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Asegura que la lista de navegación ocupe el 100% del ancho */
+}
+
+.nav-list li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.nav-list img.nav-logo {
+    height: 60px;
+    margin-right: 20px;
+    margin-left: 200px;
+}
+
+.nav-logo2 {
+    height: 70px;
+}
+
+#nav-logo2-button {
+    height: -20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 400px;
+}
+
+.imagen-cuerpo, .nuevo-boton-contenido {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen dentro del contenedor */
+    max-width: 100%; /* Asegura que la imagen no se estire más allá de su tamaño original */
+
+}
+
+.imagen-contenedor {
+    display: grid;
+    gap: 10px;
+    justify-content: space-around; /* Distribuye las imágenes equitativamente */
+    align-items: flex-start; /* Alinea las imágenes en la parte superior del contenedor */
+    flex-wrap: wrap;
+
+}
+
+.imagen-cuerpo {
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin: 0; /* Elimina los márgenes */
+}
+
+.imagen-cuerpo img {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-top: 50px;
+    max-width: 100%; /* Evita que la imagen se estire más allá de su tamaño original */
+}
+
+
+
+
+.nuevo-boton-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  margin-top: -100px;
+
+}
+
+
+
+
+.nuevo-boton-contenido button{
+    width: 50%; 
+    width: 300px;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    .imagen-contenedor {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}
+
+    .nuevo-boton-contenido button {
+        border:none; /* Ajusta el ancho del botón según sea necesario */
+ 
+    }
+
+
+
+
+.nuevo-boton-contenido {
+    text-align: center; /* Cambia esto a 'left' o 'right' según tus necesidades */
+    left: -150px;
+    position: static;
+    width: 300px;
+    height: 100px;
+
+    
+}
+
+.nuevo-boton-contenido button#nuevo-boton-contenido {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #022413;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    position: static;
+    transition: background-color 0.3s ease;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.nuevo-boton-contenido button#nuevo-boton-contenido:hover {
+    background-color: #024826;
+}
+
+.nav-list a,
+.nav-list button {
+    color: rgb(0, 0, 0);
+    font-family: 'Tahoma', sans-serif;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 900;
+    font-size: 14px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-list a::after,
+.nav-list button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover::after,
+.nav-list button:hover::after {
+    background-color: #036635;
+}
+
+.nav-list a:hover,
+.nav-list button:hover {
+    color: #036635;
+}
+
+.nav-list a:hover {
+    text-decoration: none;
+}
+
+.nav-list a:focus {
+    outline: none;
+}
+
+.nav-list button:hover {
+    background-color: #ffffff;
+}
+
+
+footer {
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    height: 100px;
+    line-height: 100px; /* Ajuste para centrar verticalmente el texto */
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 150px; /* Ajuste para el margen superior */
+}

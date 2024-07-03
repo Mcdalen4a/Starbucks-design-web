@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="icon" href="imagenes/starbucks logo.png" type="image/x-icon">
+    <!-- Incluir Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css"> <!-- Si tienes un estilo personalizado -->
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li>
+                <img src="./imagenes/starbucks-coffee-green-logo-28.png" alt="Logo" class="nav-logo" >
+           
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index2.html" class="menu-button">MENU</a></li>
+            <li><a href="index3.html">INFORMACIÓN</a></li>
+            <li><a href="index4.html">CONTACTO</a></li>
+            <li><button id="nav-logo2-button">
+                <img src="./imagenes/starbucksathomee.jpg" alt="Logo2" class="nav-logo2">
+            </button></li>
+        </ul>
+    </nav>
+    <style>
+ 
+        /* Media query para pantalla mediana */
+        @media (max-width: 768px) {
+       .nav-list {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+        }
+
+       .nav-item {
+            width: 100%; /* Ancho al 100% para ocupar todo el ancho disponible */
+            text-align: left; /* Alinea el texto a la izquierda */
+
+            .nav-logo {
+    width: 30px; /* Ancho del logotipo */
+    height: 30px; /* Alto del logotipo */
+    display: block;
+    position: absolute;
+    left: 0; /* Mueve el logotipo a la izquierda */
+  }
+
+       .nav-logo2 {
+        position: absolute;
+        align-items: center;
+        list-style: none;
+        top: 20px; /* Ajusta según sea necesario */
+        display: flex;
+        }
+    }
+        }
+
+
+    </style>
+   
+
+
+    
+    <div class="top-message">
+        <p>¡Descubre nuevas estrellas
+            en nuestro menú!</p>
+    </div>
+    <!-- Contenedor donde se añadirán las tarjetas -->
+    <div class="container">
+        <div style="margin-top: 200px; border-top: 2px solid white; border-bottom: 2px solid white; color:white;">
+            <h1 style=" font-size: 30px; margin: 30px 0; ">Comida</h1>
+        </div>
+        <div class="container-row row" id="firstRow">
+        </div>
+        <div style="border-top: 2px solid white; border-bottom: 2px solid white; color:white;">
+            <h2 style=" font-size: 30px;margin: 30px 0; text-align: left;">Café frío</h2>
+        </div>
+        <div class="container-row row" id="secondRow">
+        </div>
+        <div style=" border-top: 2px solid white;  border-bottom: 2px solid white; color:white;">
+            <h2 style="font-size: 30px; margin: 30px 0; text-align: left;">Café Caliente</h2>
+        </div>
+        <div class="container-row row" id="thirdRow">
+        </div>
+        <div style="border-top: 2px solid white; border-bottom: 2px solid white; color:white;">
+            <h2 style=" font-size: 30px; margin: 30px 0; text-align: left;">Frutales</h2>
+        </div>
+        <div class="container-row row" id="fourthRow">
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Magdalena / grupo sin_nombre</p>
+    </footer>
+   
+
+    <!-- Incluir Bootstrap JS al final del body -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-dVQkKNqFjJNYpACtVl+3Y6Z9v/2yIfz2cU+1Qt49gg4mx5q4m/GmR2U0Y9Jp9YcH" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+oEa4qiaWwcBjzxyma2bRPDddD2EnP/1JZj" crossorigin="anonymous"></script>
+
+    <!-- Tu archivo de JavaScript -->
+    <script src="main2.js"></script>
+</body>
+</html>
+

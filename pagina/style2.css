@@ -1,0 +1,200 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #022413;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Asegura que el navbar ocupe el 100% del ancho */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Asegura que la lista de navegación ocupe el 100% del ancho */
+}
+
+.nav-list li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-right: 20px;
+
+}
+
+.nav-list img.nav-logo {
+    height: 60px;
+    margin-right: 20px;
+    margin-left: 200px;
+}
+
+.nav-logo2 {
+    height: 70px;
+}
+
+#nav-logo2-button {
+    height: -20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 400px;
+}
+
+.nav-list a,
+.nav-list button {
+    color: rgb(0, 0, 0);
+    font-family: 'Tahoma', sans-serif;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 900;
+    font-size: 14px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-list a::after,
+.nav-list button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent; /* Ajustado para evitar conflicto */
+    transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover::after,
+.nav-list button:hover::after {
+    background-color: #036635;
+}
+
+.nav-list a:hover,
+.nav-list button:hover {
+    color: #036635;
+}
+
+.nav-list a:hover {
+    text-decoration: none;
+}
+
+.nav-list a:focus {
+    outline: none;
+}
+
+.nav-list button:hover {
+    background-color: #ffffff;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    margin: 10px 5px; 
+    width: auto; 
+    height: 300px;
+    display: block; 
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.card-img-top {
+    max-height: 150px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-text {
+    font-size: 20px;
+    color: #333;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Agregué esto */
+}
+
+
+.container-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 200px; /* Espacio entre filas */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Trebuchet MS', sans-serif; /* Utiliza la fuente personalizada */
+    color: white; /* Color blanco para los encabezados */
+    text-align: left; /* Alineación centrada por defecto */
+    max-width: 100%;
+
+    border-right: 1000px solid transparent; 
+    margin: 0px;
+    display: block;
+
+    display: flex;
+}
+
+
+.top-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 55px; /* Tamaño de fuente deseado */
+    font-family: 'cursive', sans-serif;
+    font-weight: bold;
+    color: beige;
+    background-color: #067655;
+    min-height: 200px; /* Ajusta según sea necesario */
+    padding: 20px; /* Añade espaciado interno si es necesario */
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+}
+
+@media (min-width: 768px) {
+    .card {
+        margin-right: 10px; /* Ajuste para pantallas medianas */
+    }
+    h1 {
+        font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+    h2 {
+        font-size: 20px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+    h3 {
+        font-size: 18px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+    h4 {
+        font-size: 16px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+}
+
+
+footer {
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    height: 100px;
+    line-height: 100px; /* Ajustado para centrar verticalmente */
+    box-sizing: border-box;
+    box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Ajuste para posición relativa */
+}
+
